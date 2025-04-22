@@ -1,6 +1,8 @@
 package net.algoenthusiast.tutorialmod.item;
 
+import com.mojang.blaze3d.shaders.Effect;
 import net.algoenthusiast.tutorialmod.TutorialMod;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
