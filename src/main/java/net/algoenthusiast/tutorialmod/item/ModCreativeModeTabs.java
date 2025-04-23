@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.BISMUTH.get()))
                     .title(Component.translatable("creativetab.tutorialmod.bismuth_items"))
+                    .noScrollBar()
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.BISMUTH);
                         output.accept(ModItems.RAW_BISMUTH);
@@ -30,10 +31,13 @@ public class ModCreativeModeTabs {
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "bismuth_items_tab"))
                     .icon(() -> new ItemStack(ModBlocks.BISMUTH_BLOCK))
                     .title(Component.translatable("creativetab.tutorialmod.bismuth_blocks"))
+                    .noScrollBar()
                     .displayItems((parameters, output) -> {
                         output.accept(ModBlocks.BISMUTH_BLOCK);
                         output.accept(ModBlocks.BISMUTH_ORE);
+                        output.accept(ModBlocks.BISMUTH_DEEPSLATE_ORE);
                     }).build());
+
 
     public static void register(IEventBus eventBus) { CREATIVE_MODE_TAB.register(eventBus); }
 }

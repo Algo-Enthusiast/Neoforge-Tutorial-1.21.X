@@ -24,13 +24,19 @@ public class ModBlocks {
                     .friction(0.1f)
                     .sound(SoundType.AMETHYST)
                     .jumpFactor(5)
-                    .requiresCorrectToolForDrops()
-                    .strength(7f)));
+                    .strength(7f)
+                    .requiresCorrectToolForDrops()));
 
     public static final DeferredBlock<Block> BISMUTH_ORE = registerBlock("bismuth_ore",
             () -> new DropExperienceBlock(UniformInt.of(2,4), BlockBehaviour.Properties.of()
                     .sound(SoundType.STONE)
                     .strength(3f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> BISMUTH_DEEPSLATE_ORE = registerBlock("bismuth_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(4,7), BlockBehaviour.Properties.of()
+                    .sound(SoundType.DEEPSLATE)
+                    .strength(4f)
                     .requiresCorrectToolForDrops()));
 
 

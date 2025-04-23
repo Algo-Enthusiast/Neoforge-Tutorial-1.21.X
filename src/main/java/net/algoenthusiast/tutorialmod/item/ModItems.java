@@ -14,7 +14,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> RAW_BISMUTH = ITEMS.register("raw_bismuth",
-            () -> new Item(new Item.Properties().stacksTo(0)));
+            () -> new Item(new Item.Properties()));
 
 
 
